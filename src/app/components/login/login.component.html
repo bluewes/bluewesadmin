@@ -1,0 +1,48 @@
+<div class="bw-contWrap">
+    <div class="bw-loginWrap">
+        <div class="bw-lwLeft">
+            <img src="/assets/img/loginBg.png" alt="Login BG">
+        </div>
+        <div class="bw-lwRight">
+            <div class="bw-loginBox">
+                <div class="bw-logoHolder">
+                    <ul class="list-inline">
+                        <li>
+                            <img src="/assets/img/logo.png" alt="BlueWes Logo">
+                        </li>
+                        <li class="text-right">
+                            <img src="/assets/img/nike.png" alt="Nike Logo">
+                        </li>
+                    </ul>
+                </div>
+                <form (ngSubmit)="login()" #f="ngForm" #formRef>
+                    <h1>Log in</h1>
+                    <p>Continue to your dashboard</p>                
+                    <div class="bw-loginForm">
+                        <div class="bw-formGroup">
+                            <label for="username">user name</label>
+                            <input name="username" type="text" class="bw-formControl userName" placeholder="Please enter here" ngModel>
+                        </div>
+                        <div class="bw-formGroup">
+                            <label for="password">Password</label>
+                            <input  name="password" type="password" class="bw-formControl pswd" placeholder="Please enter here" ngModel>
+                        </div>
+                        <div class="bw-formGroup hasCheckbox">
+                            <div class="bw-keepLogged">
+                                <label for="" class="bw-globalCheckbox">
+                                    <input type="checkbox">
+                                    <b></b>
+                                    <span>Keep me logged here</span>
+                                </label>
+                            </div>
+                            <div class="bw-forgotPswd text-right">
+                                <span class="text-link hasBlueColor">Forgot your password?</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="bw-globalBtn loginBtn">login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
